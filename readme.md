@@ -33,3 +33,5 @@ There are three folders in this repo mapped specifically to the spark/notebook c
 - `warehouse` to be used as a warehouse for written data
 
 [Find Guides and Tutorials Here](https://github.com/developer-advocacy-dremio/quick-guides-from-dremio)
+
+[Data Engineering: Create a Apache Iceberg based Data Lakehouse on your Laptop](https://dev.to/alexmercedcoder/data-engineering-create-a-apache-iceberg-based-data-lakehouse-on-your-laptop-41a8)

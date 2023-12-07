@@ -25,10 +25,13 @@ services:
       - 8080:8080
       - 10000:10000
       - 10001:10001
+    command: /bin/sh -c "~/.local/bin/jupyter notebook --ip=0.0.0.0 --allow-root --NotebookApp.token=''"
   # Nessie Catalog Server Using In-Memory Store
   nessie:
     image: projectnessie/nessie:0.67.0
     container_name: nessie
+    environment:
+      - QUARKUS_OTEL_SDK_DISABLED=true
     networks:
       iceberg:
     ports:
